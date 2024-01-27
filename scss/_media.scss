@@ -63,5 +63,31 @@
     }
     .introduction {
         align-items: center;
+        &__text {
+            text-align: center;
+        }
+    }
+    .headline__block {
+        grid-template-columns: repeat(1, 1fr);
+
+        gap: 24px;
+    }
+}
+@media (max-width: 425px) {
+    .footer__container {
+        align-items: center;
+        flex-direction: column;
+        gap: 25px;
+    }
+    .ship{
+        order: -1;
+    }
+    .footer__elem {
+
+        gap: 12px;
+    }
+    .footer a, .footer p {
+
+        text-align: center;
     }
 }
